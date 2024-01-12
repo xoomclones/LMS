@@ -16,7 +16,7 @@ const app = express();
  * Make MongoDB connection
  */
 (async () => {
-    await     
+   var uri = await     
     mongoose.connect("mongodb+srv://waqasarif:dravid@cluster0.hn1lhp7.mongodb.net/proj?retryWrites=true&w=majority", { useUnifiedTopology: true }
     ,{ useNewUrlParser: true })
     .then(() => console.log(`Database connectedd`))
